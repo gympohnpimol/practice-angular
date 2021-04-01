@@ -1,3 +1,36 @@
-<div>
-    <h2>Home Component work !</h2>
-</div>
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item>
+        <mat-icon>home</mat-icon>
+        <span>Home</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>chat</mat-icon>
+        <span>Chat</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>videocam</mat-icon>
+        <span>Let's talk</span>
+      </button>
+      <button mat-menu-item>
+        <mat-icon>power_settings_new</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </span>
+  <span class="fill-remaining-space mat-primary">Application Title</span>
+  <span>
+    <form>
+      <div class="md-form active-pink active-pink-2 mb-3" style="text-align: right;">
+        <input class="form-control" type="search" id="search" aria-label="Search" mdbInput>
+        <label for="search1">Search</label>
+      </div>
+    </form>
+  </span>
+</mat-toolbar>
+
+ 
