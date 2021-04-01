@@ -4,6 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component'
 import { CountingComponent } from './counting/counting.component'
+import { TodoComponent } from './todo/todo.component'
+
 import { ReactiveFormsModule, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { LabComponent } from './lab4/lab4.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -18,6 +20,8 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { HttpClientModule } from '@angular/common/http';
+// import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -25,7 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     HomeComponent,
     CountingComponent,
     LabComponent,
-    SideNavComponent
+    SideNavComponent,
+    TodoComponent
 
   ],
   imports: [
@@ -41,7 +46,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     LayoutModule,
     MatButtonModule,
     MatListModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   exports: [
     MatInputModule,
