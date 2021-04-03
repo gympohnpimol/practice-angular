@@ -1,0 +1,13 @@
+
+<div 
+    style="width:200px;display: inline-block;border: 1px solid gray;text-align: center;">
+    <h3>{{ products[0] }}</h3>
+    <p>
+        <span>ราคา: {{ products[1] }}บาท</span>
+    </p>
+</div>
+
+<app-home
+    *ngFor="let p of products"[product]="p">
+</app-home>
+
