@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component'
 import { CountingComponent } from './counting/counting.component'
 import { TodoComponent } from './todo/todo.component'
+import { Homework3Component } from './homework3/home3.component'
 
 import { ReactiveFormsModule, FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { LabComponent } from './lab4/lab4.component';
@@ -21,6 +22,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { HttpClientModule } from '@angular/common/http';
+import {MatExpansionModule} from '@angular/material/expansion';
+
 // import { FormsModule } from '@angular/forms'
 
 @NgModule({
@@ -30,7 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     CountingComponent,
     LabComponent,
     SideNavComponent,
-    TodoComponent
+    TodoComponent,
+    Homework3Component
 
   ],
   imports: [
@@ -47,14 +51,16 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatListModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatExpansionModule
   ],
   exports: [
     MatInputModule,
     MatButtonModule,
     MatToolbarModule,
     MatMenuModule,
-    MatInputModule
+    MatInputModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

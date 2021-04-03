@@ -1,0 +1,52 @@
+<span>
+  <form>
+    <div class="md-form active-pink active-pink-2 mb-3" style="text-align: right;">
+      <input class="form-control" type="search" id="search" aria-label="Search" mdbInput>
+      <label for="search1">Search</label>
+    </div>
+  </form>
+</span>
+
+<mat-accordion>
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        User Setting
+      </mat-panel-title>
+      <!-- <mat-panel-description>
+        This is a summary of the content
+      </mat-panel-description> -->
+    </mat-expansion-panel-header>
+    <p>Text Editor</p>
+    <p>Workbench</p>
+    <p>Window</p>
+    <p>Features</p>
+    <p>Application</p>
+    <p>Extensions</p>
+  </mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Worksapce Setting
+      </mat-panel-title>
+      <!-- <mat-panel-description>
+        Currently I am {{panelOpenState ? 'open' : 'closed'}}
+      </mat-panel-description> -->
+    </mat-expansion-panel-header>
+    <p>Text Editor</p>
+    <p>Workbench</p>
+    <p>Window</p>
+    <p>Features</p>
+    <p>Application</p>
+    <p>Extensions</p>
+  </mat-expansion-panel>
+</mat-accordion>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">File Autosave Delay</label><br>
+    <label for="fname">Control delay...</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="input"><br>
+  </form>
+</div>
+

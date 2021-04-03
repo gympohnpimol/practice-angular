@@ -1,0 +1,44 @@
+
+.fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+  }
+
+.mat-primary {
+    background:white;
+    color: #fff;
+    height: 56px;
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    font: 500 20px/32px Roboto,"Helvetica Neue",sans-serif;
+    margin: 0;
+}
+.p {
+  text-align: right;
+}
+
+.example-form {
+  min-width: 150px;
+  max-width: 100px;
+  width: 50%;
+}
+.mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.b {
+  position: absolute;
+  right: 0;
+} 
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
