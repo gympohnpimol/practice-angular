@@ -1,4 +1,4 @@
 export class Product {
-    name: String | undefined;
-    price: Number | undefined;
+    name!: String;
+    price!: Number;
 }

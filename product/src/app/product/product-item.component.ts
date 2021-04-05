@@ -9,16 +9,19 @@ import { Product } from'./product';
     styleUrls: ['./product-item.component.css']})
 export class ProductItemComponent implements OnInit { 
     @Input()
-    products: Product | undefined;
+    products!: Product;
 
     @Output()
     OnSelected: EventEmitter<Product> = new EventEmitter();
     constructor() {
-
+        // this.products = [];
+        // this.products.push({name:'aaa',price:990});
+        // this.products.push({name:'bbb',price:1000});
+        // this.products.push({name:'ccc',price:500});
     }
-    ngOnInit() {
 
-    }
+    ngOnInit() {}
+
     select() {
         this.OnSelected.emit(this.products); 
     }
