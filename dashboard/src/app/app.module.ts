@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 
 import { TooltipModule } from 'primeng/tooltip';
 import { DropdownModule } from 'primeng/dropdown';
-import { MultiSelectModule } from "primeng/multiselect";
+import { MultiSelectModule } from 'primeng/multiselect';
 import { ProgressBarModule } from "primeng/progressbar";
 
 import { MatCheckboxModule } from "@angular/material/checkbox";
@@ -23,7 +23,18 @@ import { CdkTableModule } from '@angular/cdk/table';
 
 @NgModule({
   imports: [ BrowserModule, 
-            FormsModule, BrowserAnimationsModule, DropdownModule , MultiSelectModule, MatCheckboxModule, MatTabsModule, CdkTableModule, MatSortModule, MatPaginatorModule, ProgressBarModule, TooltipModule, MatSlideToggleModule ],
+            FormsModule, 
+            BrowserAnimationsModule, 
+            DropdownModule , 
+            MultiSelectModule  , 
+            MatCheckboxModule, 
+            MatTabsModule, 
+            CdkTableModule, 
+            MatSortModule, 
+            MatPaginatorModule, 
+            ProgressBarModule, 
+            TooltipModule, 
+            MatSlideToggleModule ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })

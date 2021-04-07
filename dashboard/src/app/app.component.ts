@@ -6,6 +6,9 @@ import { NgModule, Component, ViewChild } from '@angular/core';
   styleUrls: [ './app.component.css' ],
 })
 export class AppComponent  {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   infoCards = [
     {name: 'Normal Info Card', value: '0000'},
     {name: 'Success Info Card', value: '0000'},
